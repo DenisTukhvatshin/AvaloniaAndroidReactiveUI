@@ -1,0 +1,24 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:viewModels="clr-namespace:AvaloniaAndroidReactiveUI.ViewModels"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="AvaloniaAndroidReactiveUI.Views.MainView"
+             Foreground="White"
+             Background="#171C2C">
+  <Design.DataContext>
+    <viewModels:MainViewModel />
+  </Design.DataContext>
+
+    <Grid RowDefinitions="50*,50*" VerticalAlignment="Center" HorizontalAlignment="Center">
+
+        <TextBlock Grid.Row="0"
+                   Text="{Binding Greeting}"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center"/>
+        <Button Grid.Row="1" Click="Button_OnClick">
+            <TextBlock Text="Click"></TextBlock>
+        </Button>
+    </Grid>
+</UserControl>
