@@ -1,5 +1,5 @@
 # AvaloniaAndroidReactiveUI
- I don't know why ReactiveUI doesn't work in android, can someone tell me
+ I don't know why ReactiveUI doesn't work in android, maybe someone can help me
 
 - This is avalonia.xplat template, ver 0.10.18.1
 - I added button and reaction "click", after click I expected to see a change in the text parameter "Greeting" to "It is working OK!", but this does not happen in Android.
